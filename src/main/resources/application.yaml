@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: TcgTracker
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: tcgTracker
+      username: dev
+      password: devpass
+      authentication-database: admin
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/tcgTracker
+    username: dev
+    password: devpass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
