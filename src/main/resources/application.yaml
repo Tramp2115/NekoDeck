@@ -16,5 +16,7 @@ spring:
     password: devpass
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
